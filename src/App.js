@@ -10,7 +10,7 @@ function App() {
         <Route exact path="/movies/:id/edit" component={ EditMovie } />
         <Route exact path="/movies/:id" component={ MovieDetails } />
         <Route exact path="/" component={ MovieList } />
-        <Route path="*" component={ NotFound } />
+        <Route component={ NotFound } />
       </Switch>
     </BrowserRouter>
   );
