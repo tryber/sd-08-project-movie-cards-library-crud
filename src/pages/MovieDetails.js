@@ -22,7 +22,7 @@ class MovieDetails extends Component {
   }
 
   fetchMovie() {
-    const { movieId } = this.props;
+    const { match: { params: { movieId } } } = this.props;
     movieAPI.getMovie(movieId).then((mov) => {
       this.setState({
         movie: mov,
@@ -53,7 +53,11 @@ class MovieDetails extends Component {
 }
 
 MovieDetails.propTypes = {
-  movieId: PropTypes.number.isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      movieId: PropTypes.number,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default MovieDetails;
