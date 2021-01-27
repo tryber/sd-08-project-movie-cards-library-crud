@@ -14,20 +14,9 @@ class EditMovie extends Component {
       movie: {},
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.fetchMovie = this.fetchMovie.bind(this);
   }
 
   componentDidMount() {
-    this.fetchMovie();
-  }
-
-  handleSubmit(updatedMovie) {
-    movieAPI.updateMovie(updatedMovie).then(() => this.setState({
-      shouldRedirect: true,
-    }));
-  }
-
-  fetchMovie() {
     const { match: { params: { movieId } } } = this.props;
     movieAPI.getMovie(movieId).then((mov) => {
       this.setState({
@@ -35,6 +24,12 @@ class EditMovie extends Component {
         movie: mov,
       });
     });
+  }
+
+  handleSubmit(updatedMovie) {
+    movieAPI.updateMovie(updatedMovie).then(() => this.setState({
+      shouldRedirect: true,
+    }));
   }
 
   render() {
