@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class MovieForm extends React.Component {
-  constructor(props) {
+  /* constructor(props) {
     super(props);
     this.state = { ...props.movie };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -145,11 +145,12 @@ class MovieForm extends React.Component {
         </button>
       </div>
     );
-  }
+  } */
 
   render() {
     return (
-      <div>
+      <p>Teste do NewMovie</p>
+      /* <div>
         <form>
           {this.renderTitleInput()}
           {this.renderSubtitleInput()}
@@ -159,7 +160,7 @@ class MovieForm extends React.Component {
           {this.renderRatingInput()}
           {this.renderSubmitButton()}
         </form>
-      </div>
+      </div> */
     );
   }
 }
