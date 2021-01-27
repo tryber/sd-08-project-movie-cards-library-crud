@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import * as movieAPI from '../services/movieAPI';
 import { Loading } from '../components';
@@ -21,6 +22,7 @@ class MovieDetails extends Component {
   }
 
   fetchMovie() {
+    const { movieId } = this.props;
     movieAPI.getMovie(movieId).then((mov) => {
       this.setState({
         movie: mov,
@@ -49,5 +51,9 @@ class MovieDetails extends Component {
     );
   }
 }
+
+MovieDetails.propTypes = {
+  movieId: PropTypes.number.isRequired,
+};
 
 export default MovieDetails;
