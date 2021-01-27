@@ -11,10 +11,10 @@ class EditMovie extends Component {
   }
 
   // handleSubmit(updatedMovie) {
-  }
+  // }
 
   render() {
-    // const { status, shouldRedirect, movie } = this.state;
+    const { status, shouldRedirect, movie } = this.state;
     if (shouldRedirect) {
       // Redirect
     }
@@ -29,6 +29,6 @@ class EditMovie extends Component {
       </div>
     );
   }
-// }
+}
 
 export default EditMovie;
