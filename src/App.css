@@ -344,7 +344,13 @@ form select {
   align-items: center;
   display: flex;
   flex-direction: column;
-  color: #ffffff00;
+}
+
+.error-404 p {
+  color: #09122e;
+  font-size: 1px;
+  position: relative;
+  top: -320px;
 }
 
 .error-404-img {
