@@ -9,7 +9,8 @@ class NewMovie extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(newMovie) {
+  async handleSubmit(state) {
+    await movieAPI.createMovie(state);
   }
 
   render() {
