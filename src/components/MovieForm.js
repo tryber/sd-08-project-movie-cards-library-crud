@@ -19,7 +19,6 @@ class MovieForm extends React.Component {
 
   renderTitleInput() {
     const { title } = this.state;
-
     return (
       <div>
         <label htmlFor="movie_title">
@@ -163,5 +162,10 @@ class MovieForm extends React.Component {
     );
   }
 }
+
+MovieForm.propTypes = {
+  movie: PropTypes.objectOf(PropTypes.object).isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default MovieForm;
