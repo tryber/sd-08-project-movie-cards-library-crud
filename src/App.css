@@ -1,5 +1,28 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.535);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
 }
 
+.CRUD {
+  color: whitesmoke;
+  font-size: 50px;
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.link1 {
+  margin: 30px;
+}
+
+.link2 {
+  margin-right: 30px;
+}
