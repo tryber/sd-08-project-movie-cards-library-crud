@@ -3,3 +3,66 @@ body {
   box-sizing: border-box;
 }
 
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 80px;
+}
+
+.movie-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.363);
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px 60px;
+  max-width: 500px;
+  overflow: hidden;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.movie-card .image-container {
+  position: relative;
+}
+
+.movie-card .image-container .movie-image {
+  -webkit-user-drag: none;
+  user-select: none;
+  width: 100%;
+}
+
+.movie-card .image-container .movie-title-container {
+  background-color: rgba(0, 0, 0, 0.856);
+  border-top-right-radius: 15px;
+  bottom: 3px;
+  padding: 5px 15px;
+  position: absolute;
+}
+
+.movie-card .image-container .movie-title {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 3px 3px 2px black;
+  user-select: none;
+}
+
+.movie-card .storyline {
+  margin-block-end: 0;
+  margin-block-start: 1em;
+  padding: 0 15px;
+  user-select: none;
+}
+
+.movie-card .see-details {
+  bottom: 0;
+  color: rgb(255, 166, 0);
+  font-weight: 600;
+  left: 10px;
+  padding: 20px;
+  position: absolute;
+  text-decoration: none;
+  user-select: none;
+}
