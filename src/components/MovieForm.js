@@ -138,7 +138,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <button
-          type="button"
+          type="submit"
           onClick={ this.handleSubmit }
         >
           Submit
@@ -163,5 +163,10 @@ class MovieForm extends React.Component {
     );
   }
 }
+
+MovieForm.propTypes = {
+  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default MovieForm;
