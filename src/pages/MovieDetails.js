@@ -12,6 +12,7 @@ class MovieDetails extends Component {
       loading: true,
       shouldRedirect: false,
     };
+
     this.handleDelete = this.handleDelete.bind(this);
   }
 
@@ -31,6 +32,7 @@ class MovieDetails extends Component {
   }
 
   render() {
+    // Change the condition to check the state
     const { movie: { title, storyline, imagePath, genre, rating, subtitle, id },
       loading, shouldRedirect } = this.state;
     if (loading) return <Loading />;
@@ -44,7 +46,7 @@ class MovieDetails extends Component {
         <p>{ `Genre: ${genre}` }</p>
         <p>{ `Rating: ${rating}` }</p>
         <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
-        <Link to="/">EDITAR</Link>
+        <Link to="/">VOLTAR</Link>
         <Link onClick={ this.handleDelete } to="/">DELETAR</Link>
       </div>
     );
