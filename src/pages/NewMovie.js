@@ -1,3 +1,4 @@
+// import { findAllByTitle } from '@testing-library/react';
 import React, { Component } from 'react';
 
 import MovieForm from '../components/MovieForm';
@@ -7,9 +8,13 @@ class NewMovie extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.state = {
+    //  newMovie: {},
+    };
   }
 
   handleSubmit(newMovie) {
+    movieAPI.createMovie(newMovie);
   }
 
   render() {

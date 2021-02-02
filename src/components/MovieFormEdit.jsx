@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import PropTypes, { number, string } from 'prop-types';
 import { Link } from 'react-router-dom';
 
-class MovieForm extends React.Component {
+class MovieFormEdit extends React.Component {
   constructor(props) {
     super(props);
     this.state = { ...props.movie };
@@ -23,10 +23,10 @@ class MovieForm extends React.Component {
 
     return (
       <div>
-        <label htmlFor="movie_title">
+        <label htmlFor="movie_titleedit">
           <input
-            placeholder="Insira o título"
-            id="movie_title"
+            placeholder={ title }
+            id="movie_titleedit"
             type="text"
             className="validate"
             value={ title }
@@ -43,10 +43,10 @@ class MovieForm extends React.Component {
 
     return (
       <div>
-        <label htmlFor="movie_subtitle">
+        <label htmlFor="movie_subtitleedit">
           <input
-            placeholder="Insira o subtítulo"
-            id="movie_subtitle"
+            placeholder={ subtitle }
+            id="movie_subtitleedit"
             type="text"
             value={ subtitle }
             onChange={ (event) => this.updateMovie('subtitle', event.target.value) }
@@ -62,10 +62,10 @@ class MovieForm extends React.Component {
 
     return (
       <div className="row">
-        <label htmlFor="movie_image">
+        <label htmlFor="movie_imageedit">
           <input
-            placeholder="Insira o caminho da imagem"
-            id="movie_image"
+            placeholder={ imagePath }
+            id="movie_imageedit"
             type="text"
             value={ imagePath }
             onChange={ (event) => this.updateMovie('imagePath', event.target.value) }
@@ -120,7 +120,7 @@ class MovieForm extends React.Component {
       <div>
         <label htmlFor="movie_rating">
           <input
-            placeholder="Dê a avaliação do filme"
+            placeholder={ rating }
             id="movie_rating"
             type="number"
             step={ 0.1 }
@@ -167,12 +167,13 @@ class MovieForm extends React.Component {
   }
 }
 
-MovieForm.propTypes = {
+MovieFormEdit.propTypes = {
   movie: PropTypes.shape({
     title: string,
     subtitle: string,
+    rating: number,
   }),
   match: PropTypes.objectOf(PropTypes.object),
 }.isRequired;
 
-export default MovieForm;
+export default MovieFormEdit;
