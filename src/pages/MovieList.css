@@ -1,0 +1,19 @@
+.movie-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px;
+}
+
+.add-movie {
+  align-self: flex-end;
+  background-color: darkblue;
+  border-radius: 6px;
+  color: floralwhite;
+  grid-column: 3;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 4px;
+  text-decoration: none;
+  width: fit-content;
+}

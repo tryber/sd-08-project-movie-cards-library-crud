@@ -1,0 +1,30 @@
+.edit-movie {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label-edit-movie-title {
+  color: mintcream;
+  margin-bottom: 2px;
+}
+
+.input-edit-movie {
+  border-radius: 4px;
+  height: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.edit-movie textarea {
+  height: 120px;
+  width: 100%;
+}
+
+.edit-movie button {
+  align-self: center;
+  border-radius: 8px;
+  height: 40px;
+  margin-top: 10px;
+  width: 80%;
+}
