@@ -6,6 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes />
+      <div>test</div>
     </BrowserRouter>
   );
 }
