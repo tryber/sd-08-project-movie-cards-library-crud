@@ -23,7 +23,7 @@ class MovieList extends Component {
     return (
       <div data-testid="movie-list">
         <Link to="/movies/new">ADICIONAR CARTÃO</Link>
-        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } id="123sd43" name="huaiaasasasdasdaddasdsdsdhasdasdashdaosdfhaasdasdasdasosdjfhaosijfd" value="9807979" />)}
       </div>
     );
   }
