@@ -14,7 +14,7 @@ export default function AppRouters() {
   return (
     <App>
       <Switch>
-        <Route path="/" component={ MovieList } />
+        <Route path="/" component={ MovieList } exact />
         <Route path="/movies/:id" component={ MovieDetails } />
         <Route path="/movies/new" component={ NewMovie } />
         <Route path="/movies/edit" component={ EditMovie } />
