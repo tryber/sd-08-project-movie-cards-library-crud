@@ -9,7 +9,20 @@ class MovieList extends Component {
 
     this.state = {
       movies: [],
+      loading: true,
     };
+  }
+
+  async componentWillUnmount() {
+    const data = await fetch(getMovies());
+    const dataJson = await data.json();
+
+    if (dataJson) {
+      this.setState({
+        movies: dataJson,
+        loading: false,
+      });
+    }
   }
 
   render() {
