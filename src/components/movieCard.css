@@ -1,0 +1,36 @@
+.card-container {
+  border: 1px #ccc solid;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin: 20px 50px;
+  width: 400px;
+}
+
+.card-container p {
+  padding: 15px 25px;
+}
+
+.card-titulo {
+  color: white;
+  font-weight: 800;
+  margin-top: -50px;
+}
+
+.card-details {
+  border-top: 1px #ccc solid;
+  justify-self: flex-end;
+  padding-left: 15px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.card-details a {
+  color: rgb(228, 167, 1);
+  text-decoration: none;
+}
+
+.card-img {
+  width: 400px;
+}
