@@ -3,3 +3,34 @@ body {
   box-sizing: border-box;
 }
 
+.form-label {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-label h4 {
+  width: 25%;
+}
+
+.form-control {
+  width: 70%;
+}
+
+.form {
+  border: rgb(201, 195, 195) 1px solid;
+  margin: 10px;
+  padding: 30px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.btn-primary {
+  box-shadow: blue 3px 3px 5px;
+  font-size: 20px;
+  width: 200px;
+}
