@@ -334,7 +334,7 @@ Ao clicar neste link, faça uma requisição utilizando a função `deleteMovie`
 - o link "DELETAR" deverá fazer uma requisição para a API para excluir o filme em questão
 ```
 
----
+----
 
 # Avisos finais
 
