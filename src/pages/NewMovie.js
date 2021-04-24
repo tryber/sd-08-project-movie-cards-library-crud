@@ -10,6 +10,8 @@ class NewMovie extends Component {
   }
 
   handleSubmit(newMovie) {
+    movieAPI.createMovie();
+    return newMovie;
   }
 
   render() {
