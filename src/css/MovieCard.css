@@ -1,0 +1,113 @@
+.movie-card-content {
+  background-color: rgb(26, 24, 24);
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  font-size: 16px;
+  height: calc(50vh + 200px);
+  justify-content: space-between;
+  margin: 3px;
+  transition: transform 400ms;
+  width: calc((100% / 5) + 80px);
+}
+
+.movie-card-content:hover {
+  background-color: black;
+  border: 1px ridge silver;
+  cursor: pointer;
+}
+
+.movie-card-img {
+  height: 48%;
+  width: 100%;
+}
+
+.movie-img {
+  border-radius: 2px 2px 0 0;
+  height: 100%;
+  mask-image: linear-gradient(to top, transparent 0%, black 100%);
+  width: 100%;
+}
+
+.movie-card-info {
+  height: 12%;
+  margin: 3px auto;
+  padding: 3px;
+  width: 98%;
+}
+
+.movie-card-title {
+  display: block;
+  font-family: Alata , sans-serif;
+  font-size: calc(2vh + 1vw);
+  letter-spacing: 5px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.movie-card-genre {
+  font-size: calc(0.8vh + 0.8vw);
+  width: 30%;
+}
+
+.movie-card-storyline {
+  border-bottom: 1px outset rgb(36, 36, 36);
+  height: 30%;
+  padding: 1%;
+  width: 98%;
+}
+
+.movie-card-content:hover .movie-card-storyline {
+  border-bottom: 1px outset silver;
+}
+
+.movie-card-storyline p {
+  font-family: Michroma , sans-serif;
+  font-size: calc(0.7vh + 0.6vw);
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.movie-card-button-container {
+  height: 8%;
+  width: 45%;
+}
+
+.movie-card-btn-details {
+  background-color: rgb(43, 40, 40);
+  color: azure;
+  margin: 2.5% 0 0 3%;
+  width: 100%;
+}
+
+.movie-card-content:hover .movie-card-btn-details {
+  background-color: rgb(5, 5, 5);
+  border: 2px inset silver;
+  border-radius: 0;
+}
+
+@media screen and ( max-width : 800px ) {
+
+  .movie-card-content {
+    height: calc(60vh + 120px);
+    width: calc((100% / 4) + 6%);
+  }
+}
+
+@media screen and ( max-width : 600px ) {
+
+  .movie-card-content {
+    height: calc(50vh + 80px);
+    width: calc((100% / 3) + 15%);
+  }
+}
+
+@media screen and ( max-width : 380px ) {
+
+  .movie-card-content {
+    height: calc(55vh + 50px);
+    width: calc((100% / 4) + 20%);
+  }
+}
