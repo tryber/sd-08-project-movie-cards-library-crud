@@ -1,0 +1,10 @@
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.link {
+  margin: 5px 0 40px;
+  text-align: center;
+}
